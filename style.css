@@ -1,0 +1,78 @@
+body, p, li, ul, nav, header, footer, h1, h2, h3 {
+  margin:0;
+  padding:0;
+  font-family: "Special Elite", serif;
+}
+
+/*  ========= HEADER ======= */
+header {
+  display: flex;
+  height: 10em;
+  justify-content: space-around;
+}
+header img {
+  height: 100%;
+  padding-left: 1em;
+  padding-top: 1em;
+  max-width:15%;
+}
+header ul{
+  list-style: none;
+  color: #282828;
+  display: flex;
+  flex-direction: row;
+
+}
+#socialIcons img {
+  height: 25%;
+}
+#socialIcons{
+  max-width: 23%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+#hero{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7em;
+}
+#hero h1{
+  font-size: 4em;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 100;
+  color: #9F691C;
+
+}
+
+#hero ul{
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+/*   ======== SPLASH ============ */
+
+nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 80vw;
+  padding-top: 2em;
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+
+nav a{
+  text-decoration: none;
+  color: #282828;
+}
+nav a:hover {
+  color:#9F691C;
+}
+
+#potomac {
+width: 100vw;
+margin-top: 5em;
+}
