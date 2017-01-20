@@ -28,7 +28,7 @@ header ul{
   padding: 2em 1em 0 0;
 }
 #socialIcons{
-  /*max-width: 23%;*/
+  max-width: 23%;
   display: flex;
   justify-content: flex-end;
 
