@@ -7,13 +7,13 @@ body, p, li, ul, nav, header, footer, h1, h2, h3 {
 /*  ========= HEADER ======= */
 header {
   display: flex;
+  justify-content: space-between;
   height: 10em;
-  justify-content: space-around;
+  width: 95%;
+  margin: 1em auto;
 }
 #logo{
   height: 100%;
-  padding-left: 1em;
-  padding-top: 1em;
   max-width:15%;
 }
 header ul{
@@ -21,25 +21,19 @@ header ul{
   color: #282828;
   display: flex;
   flex-direction: row;
-
 }
-#socialIcons img {
-  height: 25%;
-  padding: 2em 1em 0 0;
+.social{
+  height: 35%;
 }
 #socialIcons{
-  max-width: 23%;
   display: flex;
   justify-content: flex-end;
-
 }
 #hero{
-  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*padding-left: 7em;*/
 }
 #hero h1{
   font-size: 4em;
@@ -49,7 +43,7 @@ header ul{
 
 }
 
-#hero ul{
+#hero p{
   font-size: 2em;
   padding-top: 0.5em;
 }
@@ -75,72 +69,59 @@ nav a:hover {
 
 #potomac {
 width: 100vw;
-margin-top: 5em;
 }
 
 /*  ========= MY BOOKS ============= */
-#subheads {
-  display: flex;
-  justify-content: flex-start !important;
-}
-#logoSmall {
-  height: 90%;
-  padding-left: 1em;
-  max-width:15%;
-}
-#subheads ul{
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 2em;
-  font-size: 1.25em;
-  width: 70%;
-}
-#subheads li{
-  padding-left:2em;
-}
-#subheads a {
-  text-decoration: none;
-  color: #282828;
-}
-#subheads a:hover {
-  color: #9F691C;
-}
+  /* ----------- My Books Header -------- */
+  #subheader{
+    height: 7em;
+    margin: 0.5em auto;
+  }
+  #logoSmall{
+    height: 100%;
+  }
+  #subheads {
+    list-style: none;
+    padding-top: 1em;
+    font-size: 1.5em;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+  }
 
-#socialIconsSmall img {
-  height: 25%;
-  padding: 2em 1em 0 0;
-}
-#socialIconsSmall{
-  max-width: 23%;
-  display: flex;
-  justify-content: flex-end;
+  #subheads a {
+    text-decoration: none;
+    color: #4d4d4d;
+    padding-left: 1.5em;
+  }
+  #subheads a:hover {
+    color: #9F691C;
+  }
 
-}
+
 /* ---- MY BOOKS MAIN ------ */
+
+#myTitles{
+  display: flex;
+  align-items: center;
+  position:relative;
+  overflow: hidden;
+  height: 50vh;
+}
+
 #bookCovers img {
   border: 3px solid #383427;
-  height: 40vh;
+  height: 35vh;
   box-shadow: 5px 5px 2.5px #585443;
 }
 
 #bookCovers{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   position: relative;
   z-index: 2;
-  padding-bottom: 2em;
-}
-
-#myBooks{
-  display: flex;
-  align-items: center;
-  height: 60vh;
-  position:relative;
-  overflow: hidden;
 }
 #parchment{
   position: absolute;
@@ -149,12 +130,50 @@ margin-top: 5em;
   width: 100%;
   opacity: 0.5;
 }
-#buyBooks p, blockquote {
-  font-family: 'Open Sans', Arial, sans-serif;
+
+    /*------- Buy Books & Inscribe ----- */
+#bookBox {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 3em;
+  padding-top: 2em;
 }
+
 #buyBooks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   max-width: 50%;
-  margin-right: 2em;
+}
+#buyOne{
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+#buyOne p{
+
+}
+#buyBooks p, blockquote{
+  font-family: 'Merriweather', Arial, sans-serif;
+  text-align: center;
+}
+#buyBooks p{
+  color: #4C6289;
+  font-size: 1.5em;
+}
+#buyBooks blockquote{
+  font-size: 1.5em;
+}
+#buyBooks a{
+  text-decoration: none;
+  color: #EC7823;
+}
+#indie {
+  font-style: italic;
+  font-size: 1em !important;
 }
 #inscribe {
   display: flex;
@@ -167,12 +186,10 @@ margin-top: 5em;
   padding: 1em 0;
   margin-bottom: 2em;
 }
-#bookBox {
-  display: flex;
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 3em;
+#inscribe h2 {
+  font-size: 1.6em;
 }
+
 
 /* ======  BLOG ====== */
 embed{
@@ -187,7 +204,7 @@ embed{
 }
 #blogDesc {
   text-align: center;
-  width: 75%;
+  width: 65%;
   margin: 0 auto;
   font-size: 1.7em;
 }
@@ -202,8 +219,8 @@ embed{
   flex-direction: column;
   width: 40%;
   margin: 0 auto;
-
 }
+
 #speaker {
   display: flex;
 }
@@ -385,7 +402,7 @@ embed{
   margin: 0 0 0 0.5em;
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
   .pull-right {
     float: none;
   }
@@ -420,4 +437,4 @@ embed{
   li small {
     display: none;
   }
-}
+} */
