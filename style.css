@@ -5,7 +5,7 @@ body, p, li, ul, nav, header, footer, h1, h2, h3 {
 }
 
 /*  ========= HEADER ======= */
-header {
+#header {
   display: flex;
   justify-content: space-between;
   height: 10em;
@@ -16,7 +16,7 @@ header {
   height: 100%;
   max-width:15%;
 }
-header ul{
+#header ul{
   list-style: none;
   color: #282828;
   display: flex;
@@ -76,6 +76,8 @@ width: 100vw;
   #subheader{
     height: 7em;
     margin: 0.5em auto;
+    display: flex;
+    width: 96%;
   }
   #logoSmall{
     height: 100%;
@@ -84,7 +86,7 @@ width: 100vw;
     list-style: none;
     padding-top: 1em;
     font-size: 1.5em;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
   }
@@ -98,7 +100,14 @@ width: 100vw;
     color: #9F691C;
   }
 
-
+#socialIcons2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.social2 {
+  height: 50%;
+  padding-top: 0.5em;
+}
 /* ---- MY BOOKS MAIN ------ */
 
 #myTitles{
